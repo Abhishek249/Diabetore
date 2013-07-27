@@ -99,17 +99,17 @@ $(document).ready(function()
 			{
 				var cursor = event.target.result;
 				if (cursor) 
-				{	$("#main").slideDown();
+				{
+					$("#main").show();
 					console.log("Date " + cursor.value.date + "  Pre: " + cursor.value.pre +"  Post: " + cursor.value.post);
 					var row= ( cursor.value.date + "  Pre: " + cursor.value.pre +"  Post: " + cursor.value.post);
 					$('.records').append('<div class="row" style="border:1px solid white;border-radius:3rem;text-align:center">'+row+'</div>');
+
 					cursor.continue();
 				}
-				else
-				{
-					alert("No more entries!");
-				}
+				
 				$("#back").click(function(){
+					
 					$('#main').hide();
 				});
 				
@@ -117,7 +117,7 @@ $(document).ready(function()
 			
 		}
 		
-		
+				
 		function clearObjectStore(store_name)
 		{
 			var store = getObjectStore(store_name, 'readwrite');
@@ -170,7 +170,7 @@ $(document).ready(function()
 			getItems(date);
 		  });
 		  
-		  $("#showAll").click(function()
+		 $("#showAll").click(function()
 		  {
 			
 				console.log("eventlistner called for showAll...");
@@ -178,6 +178,10 @@ $(document).ready(function()
 				showAll();
 			
 		  });
+		  
+		 
+
+		 
 		  
 		  $("#delete").click(function()
 		  {
