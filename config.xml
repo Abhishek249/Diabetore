@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="2.0.0.0" id="sampleapp">
+ 
+  <author href="http://www.tyba.com/abhishek2k49"
+          rim:copyright="Copyright 1998-2012 abhishek2k49">abhishek2k49</author>
+ 
+  <name>Sample application</name>
+ 
+  <description>
+ This app helps you to maintain your sugar(glucose) records in a clear and efficient way. The basic functionality includes add record, show by date, show all, graph plot
+  </description>
+ 
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>access_location_services</rim:permit>
+    <rim:permit>use_camera</rim:permit>  
+  </rim:permissions>
+ 
+  <icon src="diabicon128.png"/>
+ 
+  
+ 
+  <content src="index.html"/>
+ 
+  <feature id="blackberry.ui.dialog"/>
+   
+  <feature id="blackberry.app">
+    <param name="orientation" value="portrait" />
+    <param name="backgroundColor" value="0xFFFF0000" />
+  </feature>
+ 
+  
+ 
+  <license href="http://www.tyba.com/abhishek2k49"/>
+ 
+</widget>
